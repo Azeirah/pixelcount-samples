@@ -43,9 +43,4 @@ def pipeline(image, **params):
     # sort by region size
     regions.sort(key = lambda region: region.filled_area, reverse = True)
 
-    return {
-        'slic' : SLIC,
-        'background' : background,
-        'labels' : labels,
-        'regions' : regions,
-        }
+    return 5
